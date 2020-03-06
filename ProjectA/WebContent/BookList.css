@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+body {
+	background: #fffae8;
+	font-family: 'Open Sans', sans-serif;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+header {
+	height: 100px; /*ヘッダーの高さ*/
+	width: 100%; /*ヘッダーの横幅*/
+	color: #ffffff; /*ヘッダーの文字の色*/
+	background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+}
+
+header p {
+	line-height: 100px; /*行の高さ*/
+	font-size: 30px; /*文字の大きさ*/
+}
+.button {
+
+	display: inline-block;
+	border-radius: 5%; /* 角丸       */
+	font-size: 21pt; /* 文字サイズ */
+	text-align: center; /* 文字位置   */
+	cursor: pointer; /* カーソル   */
+	padding: 1px 10px; /* 余白       */
+	background: #ff8b5f; /* 背景色     */
+	color: #ffffff; /* 文字色     */
+	line-height: 1em; /* 1行の高さ  */
+	transition: .3s; /* なめらか変化 */
+	border: 2px solid #FFC107; /* 枠の指定 */
+}
+
+.button:hover {
+	color: #ff8b5f; /* 背景色     */
+	background: #ffffff; /* 文字色     */
+}

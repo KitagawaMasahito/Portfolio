@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Morning Test</title>
+</head>
+
+<body>
+	<h1>登録フォーム</h1>
+	<p>必要事項をご入力の上、送信ボタンを押してください。</p>
+
+	<form action="/Lesson03/servlets/Day0129Servlet" method="post">
+	<table border="1">
+		<tr>
+			<td bgcolor="whitesmoke">メールアドレス[必須]</td>
+			<td>
+				<input type="text" name="mail1"><br>
+				<input type="text" name="mail2">確認用
+			</td>
+		</tr>
+
+		<tr>
+			<td bgcolor="whitesmoke">性別</td>
+			<td>
+				<input type="radio" name="gend" value="man">男性　
+				<input type="radio" name="gend" value="woman">女性
+			</td>
+		</tr>
+
+		<tr>
+			<td bgcolor="whitesmoke">生年月日</td>
+			<td>
+				<input type="text" name="year">年
+				<input type="text" name="month">月
+				<input type="text" name="day">日
+			</td>
+		</tr>
+
+		<tr>
+			<td bgcolor="whitesmoke">郵便番号</td>
+			<td>
+				<input type="text" name="zip1">-
+				<input type="text" name="zip2">
+			</td>
+		</tr>
+
+		<tr>
+			<td bgcolor="whitesmoke">都道府県</td>
+			<td>
+				<select name="pref">
+					<option disabled selected>------選択してください------</option>
+					<option value="1">栃木県</option>
+					<option value="2">群馬県</option>
+					<option value="3">埼玉県</option>
+					<option value="4">茨城県</option>
+					<option value="5">千葉県</option>
+					<option value="6">東京都</option>
+					<option value="7">神奈川県</option>
+				</select>
+			</td>
+		</tr>
+
+		<tr>
+			<td bgcolor="whitesmoke">電話番号</td>
+			<td>
+				<input type="text" name="tel1">-
+				<input type="text" name="tel2">
+				<input type="text" name="tel3">
+			</td>
+		</tr>
+
+		<tr>
+			<td bgcolor="whitesmoke">当社を知ったきっかけ</td>
+			<td>
+				<input type="radio" name="trigger" value="web">WEB<br>
+				<input type="radio" name="trigger" value="cm">CM<br>
+				<input type="radio" name="trigger" value="introduce">紹介
+			</td>
+		</tr>
+	</table>
+		<button type="submit">送信</button>
+		<button type="reset">リセット</button>
+	</form>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>フォーム練習</title>
+</head>
+<body>
+	<form action="/URL" method="post">
+		<p>
+			名前：<input type="text" name="fullname"><br>
+			住所：<input type="text" name="address">
+		</p>
+		<p>
+			パスワード：<input type="password" name="pass1">
+		</p>
+		<p>
+			<input type="radio" name="sex" value="man" checked="checked">男性
+			<input type="radio" name="sex" value="woman">女性<br>
+			<!--
+			<input type="submit" value="送信">
+											-->
+			<button type="submit"></button>
+		</p>
+	</form>
+
+	<form action="#" method="post">
+		<p>
+			海外旅行に行くなら<br>
+			<select name="select1">
+				<option>アジア</option>
+				<option>アメリカ</option>
+				<option>ヨーロッパ</option>
+				<option>アフリカ</option>
+			</select>
+		</p>
+	</form>
+
+	<form action="/URL/" method="post">
+		<input type="checkbox" name="breakfast" value="bread">パン
+		<input type="checkbox" name="breakfast" value="bacon">ベーコン
+		<input type="checkbox" name="breakfast" value="ham">ハム
+		<br>
+	</form>
+
+	<p></p>
+
+	<form action="#" method="post">
+		感想を入力して下さい<br>
+		<textarea name="textarea" rows="3" cols="30"></textarea>
+	</form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>朝テスト（サーブレット）</title>
+</head>
+<body>
+	<p>フォームを利用してサーブレットへデータを送ります。</p>
+	<p>
+		受取り側のアノテーションは、以下の様にしておいてください。<br>
+		@WebServlet("/MorningTest0207")
+	</p>
+
+	<form action="MorningTest0207" method="get">
+		<button type="submit">GETで送信</button>
+	</form>
+
+	<form action="MorningTest0207" method="post">
+		<button type="submit">POSTで送信</button>
+	</form>
+
+</body>
+</html>
+
+
+
+
+
+
+

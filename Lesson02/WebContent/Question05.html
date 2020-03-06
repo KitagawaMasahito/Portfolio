@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Question05</title>
+</head>
+
+<body>
+	<h1>アンケート</h1>
+	<form action="/Lesson02/servlets/Question05Servlet" method="post">
+		<p>①あなたのお名前を入力して下さい。</p>
+		<p><input type="text" name="name"></p>
+		<p>②性別を選んでください。</p>
+		<p>
+			<input type="radio" name="gender" value="man">男
+			<input type="radio" name="gender" value="woman">女
+		</p>
+		<p>③お住まいの地域を選択してください。</p>
+		<select name="place">
+			<option value="hokkaidou">北海道</option>
+			<option value="touhoku">東北</option>
+			<option value="kantou">関東</option>
+			<option value="kansai">関西</option>
+			<option value="kyushu">九州</option>
+		</select>
+		<p>④興味のあることを選択してください。</p>
+		<p>
+			<input type="checkbox" name="sports" value="jog">ジョギング
+			<input type="checkbox" name="sports" value="soccor">サッカー
+			<input type="checkbox" name="sports" value="baseball"> 野球
+			<input type="checkbox" name="sports" value="swimming">水泳
+		</p>
+		<p>⑤記入が終わりましたら、送信ボタンを押してください。</p>
+		<button type="submit">送信</button>
+	</form>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Question05</title>
+<style type="text/css">
+p {
+margin-top: 30px;
+}
+
+.left{
+margin-left:  25px;
+}
+</style>
+</head>
+<body>
+	<h3>レストランご予約受付</h3>
+	<form action="Question05reServlet"  method="post">
+		<p>あなたのお名前を入力してください。</p>
+		<input class="left"  type="text" name="name"><br>
+		<p>ご来店の日時を入力してください。</p>
+		<input class="left" type="text" name="month" size="2">月
+		<input type="text" name="day"  size="2">日
+		<input type="text" name="time"  size="2">時にご来店
+		<p> 人数を選んでください。
+			<select name="sum">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+			</select>名</p>
+		<p>オプションを選択してください。（複数可）</p>
+	<input class="left" type="checkbox" name="option" value="flower"> 花束
+	<input type="checkbox" name="option" value="cake"> お誕生ケーキ
+	<input type="checkbox" name="option" value="play"> ピアノ生演奏
+	<input type="checkbox" name="option" value="picture"> 写真撮影
+		<p>入力が終わりましたら、予約ボタンを押してください</p>
+		<button class="left"  type="submit">予約</button>
+	</form>
+</body>
+</html>

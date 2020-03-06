@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+header{
+	height			: 100px;
+	width			: 100%;
+	background-color: #d1fede;
+}
+
+article{
+	height			: 200px;
+	width			: 60%;
+	background-color: #ffe1c4;
+}
+
+nav{
+	height			: 200px;
+	width			: 20%;
+	background-color: #ffcae4;
+}
+
+aside{
+	height			: 200px;
+	width			: 20%;
+	background-color: #e1e1e1;
+}
+
+footer{
+	height			: 100px;
+	width			: 100%;
+	background-color: #fce9fe
+}

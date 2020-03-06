@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body{
+	background-color: #c5cdfe;
+}
+
+.comment{
+	background-color: #ff80ff;
+	display: flex;
+}
+
+.comment-right{
+	background-color: #e1e1e1;
+	margin: 5px;
+}
+
+.comment-name{
+	background-color: #ffff80;
+	margin: 5px;
+}
+
+.comment-text{
+	background-color: #80ff80;
+	margin: 5px;
+}
+
+.comment-buttons{
+	background-color: #408080;
+	margin: 5px
+}
+
+.comment-left{
+	background-color: #e1e1e1;
+	margin: 5px;
+}

@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+.test01{
+	background-color: #d22d3b;
+	color: white;
+	padding: 5px;
+	border-left: 6px solid #a5522d;
+}
+
+.test02{
+	background-color: #72bfe5;
+	color: white;
+	padding: 5px;
+	border: 2px solid #0164a1;
+	border-radius: 5px;
+}

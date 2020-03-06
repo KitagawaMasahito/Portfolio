@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./css/Question03.css">
+	<title>Question03</title>
+</head>
+
+<body>
+	<h3 style="text-align: center;">ご予約はこちらから！</h3>
+	<form action="/Lesson02/servlets/Question03Servlet" method="post">
+		<div class="rayout">
+			<div class="rayout-mark">お名前</div>
+			<div class="rayout-box"><input type="text" name="name"></div>
+		</div>
+		<div class="rayout">
+			<div class="rayout-mark">メールアドレス</div>
+			<div class="rayout-box"><input type="text" name="mail"></div>
+		</div>
+		<div class="rayout">
+			<div class="rayout-mark">予約メニュー</div>
+			<div class="rayout-box">
+				<input type="radio" name="menu" value="cut">カット
+				<input type="radio" name="menu" value="color">カット*カラー
+				<input type="radio" name="menu" value="spa">ヘッドスパ
+			</div>
+		</div>
+		<div class="rayout">
+			<div class="rayout-mark">ご意見</div>
+			<div class="rayout-input">
+				<div class="rayout-box">
+					<textarea name="opinion" rows="3" cols="30"></textarea>
+				</div>
+			</div>
+		</div>
+		<input type="submit" value="予約する">
+		<input type="reset" value="リセット">
+	</form>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+<!-- ↑郵便番号から都道府県と市区町村を自動的に入力する準備 -->
+<link href="https://fonts.googleapis.com/css?family=Aclonica&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+<!-- ↑グーグルフォントの利用-->
+<style type="text/css">
+div{font-family: 'Aclonica', sans-serif;}
+input{	margin: 10px 40px;}
+ .send {border: none;	background-color: orange; font-family: "Nico Moji";}
+ .reset{border: none;	background-color: gray; font-family: "Nico Moji";}
+.nicomoji { font-family: "Nico Moji"; }
+</style>
+<!-- ↑cssをhtmlに組み込む際はこのように記述  -->
+
+<title>朝テスト リクエストパラメータの受け渡し</title>
+</head>
+<body>
+<h2 class="nicomoji">うけつけフォーム</h2>
+<form action="morningTest0214Servlet" method="post">
+<div>Name<span class="nicomoji">（なまえ）</span></div>
+<input  type="text" name="name">
+<div>Postal code<span class="nicomoji">（ゆうびんばんごう）</span></div>
+<input type="text" name="postalCode"  size="8"  maxlength="8"   onKeyUp="AjaxZip3.zip2addr(this,'','pref','address');" >
+<!-- 郵便番号入力欄 onKeyUpはjavaScriptです -->
+<div>Prefectures<span class="nicomoji">（とどうふけん）</span></div>
+<input type="text" name="pref" >
+<div>Municipality<span class="nicomoji">（しくちょうそん）</span></div>
+<input type="text" name="address" >
+<div>House Number<span class="nicomoji">（ばんち）</span></div>
+<input type="text" name="address2" ><br>
+<button  class="send" type="submit" >おくる</button>
+<button class="reset" type="reset">リセット</button>
+</form>
+</body>
+</html>

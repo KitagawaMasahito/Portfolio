@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Question03</title>
+</head>
+<body>
+	<h3 align="center">アンケート</h3>
+	<form action="Question03Servlet" method="post">
+		<p><span class=title>お名前</span> <input type="text" name="name"></p>
+		<p>今の生活に満足していますか</p>
+		<input type="radio" name="satisfaction"value="5">とても満足<br>
+		<input type="radio" name="satisfaction"value="4">まあまあ満足<br>
+		<input type="radio" name="satisfaction"value="3">どちらともいえない<br>
+		<input type="radio" name="satisfaction"value="2">やや不満<br>
+		<input type="radio" name="satisfaction"value="1">とても不満<br>
+		<p>
+			不満と解答した方に質問です。何を改善したいですか<br>
+			<textarea rows="5" cols="20" name="opinion"></textarea>
+		</p>
+			<button type="submit" >送信する</button>
+			<button type="reset" >リセット</button>
+	</form>
+</body>
+</html>

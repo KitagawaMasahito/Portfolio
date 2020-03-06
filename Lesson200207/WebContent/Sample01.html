@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>リクエストパラメータの受取り</title>
+</head>
+<body>
+<p>リクエストパラメータの受取りを練習</p>
+<p>フォームから送るIDとパスワードをServlet側で受け取って表示してみます！</p>
+<form action="Sample01Servlet" method="get">
+<p>Id: <input type="text" name="id"></p>
+<p>Password <input type="text" name = "password"></p>
+<button >送信</button>
+</form>
+<ul>
+<li>送り先："/プロジェクト名/controller/sample01Servlet"</li>
+<li>ID はname属性 id</li>
+<li>Passwordはname属性password</li>
+
+</ul>
+
+</body>
+</html>
